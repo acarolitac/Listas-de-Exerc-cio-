@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 5</title>
+</head>
+<body>
+    <script type="text/javascript"> 
+        var tabuada = parseInt(prompt("Digite o valor da tabuada que deseja visualizar:"));
+        var vetorA = new Array();
+
+        for(var i = 1; i <=10; i++) {
+            vetorA[i] = tabuada * i;
+        }
+
+        for(var i = 1; i <= 10; i++)
+            document.write("Vetor A[" + (i-1) + "]: " + tabuada + " x " + i + " = " + vetorA[i] + "</br>");     
+    </script>
+</body>
+</html>

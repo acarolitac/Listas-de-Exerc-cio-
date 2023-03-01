@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 10</title>
+</head>
+<body>
+    <script>
+       const M = [[5], [5], [5], [5], [5]];
+       var soma1 = 0;
+       var soma2 = 0;
+       var soma3 = 0;
+       var soma4 = 0;
+       var soma5 = 0;
+       var somaTotal = 0;
+
+        for(i = 0; i <= 4; i++) /*loop linha*/ {
+            for(x = 0; x <= 4; x++) /*loop coluna*/ {
+            M[i][x] = parseFloat(prompt("Digite um valor para a matriz M:"));
+            }
+        }
+
+        for(i = 0; i <= 4; i++) {
+            for(x = 0; x <= 4; x++) {
+            soma1 = soma1 + M[4][x];
+            }
+        }
+
+        for(i = 0; i <= 4; i++) {
+            for(x = 0; x <= 4; x++) {
+            soma2 = soma2 + M[i][2];
+            }
+        }
+
+        for(i = 0; i <= 4; i++) {
+            for(x = 0; x <= 4; x++) {
+                if(i == x) {	
+                    soma3 = soma3 + M[i][x];
+                }
+            }
+        }
+
+        for(i = 0; i <= 4; i++) {	
+            for(x = 0; x <= 4; x++) {	
+                if(i + x == 4) {
+                    soma4 = soma4 + M[i][x];	
+                }
+	        }
+        }
+
+        for(i = 0; i <= 4; i++) {	
+            for(x = 0; x <= 4; x++) {	
+            soma5 = soma5 + M[i][x];	
+	        }
+        }
+
+        document.write("a - Soma da linha 4 de M: " + soma1 + "</br>");
+        document.write("b - Soma da coluna 2 de M: " + soma2 + "</br>");
+        document.write("c - Soma da diagonal principal: " + soma3 + "</br>");
+        document.write("d - Soma da diagonal secundário: " + soma4 + "</br>");
+        document.write("e -  Soma de todos os elementos da matriz: " + soma1 + "</br>");
+        somaTotal = soma1 + soma2 + soma3 + soma4 + soma5;
+        document.write("f - Soma total: " + somaTotal + "</br>");
+        document.write("Matriz: " + M[i][x]);
+    </script>
+</body>
+</html>

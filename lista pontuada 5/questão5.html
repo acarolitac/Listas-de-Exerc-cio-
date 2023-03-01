@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 5</title>
+</head>
+<body>
+    <script>
+        var nome = new Array(10);
+        var pr1 = new Array(10);
+        var pr2 = new Array(10);
+        var media = new Array(10);
+        var somaMedia = 0;
+
+        for(i = 0; i <= 9; i++) {
+            nome[i] = prompt("Digite o nome do aluno " + (i+1) + ":");
+            pr1[i] = parseFloat(prompt("Digite a primeira nota do aluno " + (i+1) + ":"));
+            pr2[i] = parseFloat(prompt("Digite a segunda nota do aluno " + (i+1) + ":"));
+            media[i] = (pr1[i] + pr2[i]) / 2;
+            somaMedia = somaMedia + media[i];
+        }
+        document.write("LISTAGEM </br> -------------------------------------- </br>");
+
+        for(i = 0; i <= 9; i++) 
+            document.write("Aluno " + (i+1) + ": " + nome[i] + " | nota 1: " + pr1[i] + " | nota 2: " + pr2[i] + " | média: " + media[i] + "</br></br>");
+
+        for(i = 0; i <= 9; i++) {
+            if(media[i] >= 6) {
+                document.write("Situação do aluno " + (i+1) + ": Aprovado!</br>");
+            }
+            else {
+                document.write("Situação do aluno " + (i+1) + ": Reprovado!</br>");
+            }
+        }
+    </script>
+</body>
+</html>

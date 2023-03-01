@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2</title>
+</head>
+    <script type="text/javascript">
+        function hexadecimalParaDecimal() {
+
+            var num = prompt("Informe o número em hexadecimal:");
+            var resultado = parseInt(num, 16);
+            document.write("O hexadecimal " + num + " é igual a " + resultado + " decimal(is).\n</br>");
+        }
+        hexadecimalParaDecimal()
+            
+        function graus() {
+
+            var graus = prompt("Informe o valor do grau:");
+            graus = parseInt(graus);
+            var pi = 3.14 / 180;
+            var resultado = graus * pi;
+            document.write("</br>" + graus + " grau(s) é igual a " + resultado + " radiano(s).\n</br>");    
+        }
+        graus()
+    </script>
+<body>
+    </br><A href="javascript:hexadecimalParaDecimal()">Clique aqui para realizar a conversão de hexadecimal para decimal.</A></br>
+    </br><A href="javascript:graus()">Clique aqui para realizar a conversão de graus para radianos.</A>
+</body>
+</html>

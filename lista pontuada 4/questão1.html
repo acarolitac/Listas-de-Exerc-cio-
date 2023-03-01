@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questão 1</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var vetorA = new Array(10);
+		var vetorB = new Array(10);
+		var vetorC = new Array();
+
+		for(var i = 0; i <= 9; i++) {
+			vetorA[i] = parseFloat(prompt("Digite um valor para o vetor A:"));
+			vetorB[i] = parseFloat(prompt("Digite um valor para o vetor B:"));
+			vetorC[i] = vetorA[i] - vetorB[i];
+		}
+		for(var i = 0; i <= 9; i++)
+			document.write("\nVetor A[" + i + "]: " + vetorA[i] + "</br>");
+
+		for(var i = 0; i <= 9; i++)
+			document.write("\nVetor B[" + i + "]: " + vetorB[i] + "</br>");
+
+		for(var i = 0; i <= 9; i++)
+			document.write("\nVetor C[" + i + "]: " + vetorC[i] + "</br>");
+	</script>
+</body>
+</html>

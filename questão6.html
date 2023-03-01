@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 6</title>
+</head>
+<body>
+    <script>
+        const A = [[3], [3], [3]];
+        var c = 0;
+        var num = prompt("Digite 0 ou 1:");
+
+        for(i = 0; i < 3; j++) {
+            for(x = 0; x < 3; x++) {
+                A[i][x] = prompt("Digite os valores da linha " + (j+1) + (i+1));
+            }
+        }
+        
+        for(i = 0; i < 3; i++) {
+            c = 0;
+            for(x = 0; x < 3; x++) {
+                if(A[i][x] == 1) {
+                    c++;
+                }
+                if(c > 1) {
+                    document.write("A matriz não é permuta.</br>");
+                }
+            }
+        }
+        
+        for(i=0;i<3;i++){
+            c=0;
+            for(j=0;j<3;j++){
+                if(matriz[x][i] == 1) {
+                    c++;
+                    if(c > 1) {
+                        document.write("A matriz não é permuta.</br>");
+                    }
+                }
+            }
+        }
+        document.write("Essa matriz é permuta.</br>");
+    </script>
+</body>
+</html>

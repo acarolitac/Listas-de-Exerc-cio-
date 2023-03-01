@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var n = Number(prompt("Numero fatorial?")),
+            base = Number(prompt("Numero Potencia?")),
+            texto = prompt("texto");
+        fazTudo(n, base, texto);
+        function fazTudo(fatorial, pot, texto) {
+            //potencia
+            var expoente = Number(prompt("Expoente potencia?")),
+                potencia = pot ** expoente;
+            //fatorial
+            var fat = fatorial;
+    
+            for (let i = fatorial; i != 0; i--) {
+                fat += (fat * (i - 1));
+                if (fat == ((fatorial * (i - 1)) + fatorial)) {
+                    fat -= fatorial;
+                }
+                fatorial--;
+            }
+            //texto
+            var text = Olá, ${texto};
+    
+            document.write(${text}</br>Potencia: ${potencia}</br>Fatorial: ${fat});
+        }
+    
+    
+    </script>
+</body>
+</html>
